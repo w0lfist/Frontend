@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
-
+import RedirectionButton from "../components/redirection Button";
 
 function SingIn() {
 
@@ -42,6 +42,9 @@ function SingIn() {
 
     return (
         <div>
+            <div>
+                <RedirectionButton ruta="/" texto="Home" />
+            </div>
             <form onSubmit={handlesubmint}>
                 <input 
                     type="text" 
